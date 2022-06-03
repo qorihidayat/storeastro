@@ -1,0 +1,289 @@
+body{
+  background: rgb(98,134,47);
+  background: linear-gradient(-90deg, rgba(98,134,47,1) 25%, rgba(203,59,59,1) 100%);
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+
+/* ---------------------------NAVIGASI BAR--------------------------- */
+nav{
+  background: rgb(98,134,47);
+  background: linear-gradient(-90deg, rgba(98,134,47,1) 25%, rgba(203,59,59,1) 100%);
+}
+
+nav.change{
+  background: linear-gradient(-90deg, rgba(85, 116, 39, 1) 25%, rgba(182, 66, 66, 1) 100%) !important;
+  animation: show .5s forwards;
+}
+
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.nav-link{
+  color : white !important;
+}
+
+.nav-item{
+    margin-left: 30px;
+}
+
+.support{
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+
+/* -----------------------------SLIDER--------------------- */
+#slider{
+  min-height: 690px;
+}
+
+.carousel-item{
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+/* -----------------------------favorite poke--------------------- */
+#favoritePoke{
+  min-height: 600px;
+}
+
+#favoritePoke .col-md-4:nth-child(2){
+  animation: showLeft 2s;
+}
+
+#favoritePoke .col-md-4:nth-child(3){
+  animation: showUp 2s;
+}
+
+#favoritePoke .col-md-4:nth-child(4){
+  animation: showRight 2s;
+}
+
+@keyframes showUp {
+  0%{
+    opacity: 0;
+    transform: translate(0px, 100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes showLeft {
+  0%{
+    opacity: 0;
+    transform: translate(-50px, 0px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes showRight {
+  0%{
+    opacity: 0;
+    transform: translate(50px, 0px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+#favoritePoke .container{
+  width: 70%;
+}
+.judul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.judul h3{
+    width: 200px;
+}
+
+.card{
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+}
+
+.card img{
+  width: 150px;
+  margin: auto;
+}
+
+/* --------------------------ABOUT------------------------- */
+#about{
+  min-height: 500px;
+}
+
+#about .container{
+  width: 60%;
+}
+
+
+/* --------------------------Trick or treat------------------------- */
+#trick{
+  min-height: 500px;
+}
+
+#trick .row{
+  width: 70%;
+  margin: auto;
+
+}
+
+.trick-card{
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgba(51, 51, 51, .2);
+}
+
+.trick-card img{
+  width: 80px;
+}
+
+.trick-card h5, .trick-card p{
+  margin: 0;
+}
+
+/* --------------------------Discount------------------------- */
+#discount{
+  min-height: 500px;
+}
+
+#discount .container{
+  width: 60%;
+}
+
+.discount{
+  background-color: rgba(51, 51, 51, .2);
+  border-radius: 10px;
+  display: flex;
+  align-items:center;
+}
+
+.discount-img{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+/* --------------------------new arrivals------------------------- */
+#arrivals{
+  min-height: 500px;
+}
+
+#arrivals .row{
+  width: 80%;
+  margin: auto;
+
+
+}
+
+.arrivals-card{
+  width: 105%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgba(51, 51, 51, .2);
+}
+
+.arrivals-card img{
+  width: 80px;
+}
+
+.arrivals-card h5, .trick-card p{
+  margin: 0;
+}
+
+/* ---------------Subscriber -------------- */
+#subscribe{
+  height: 400px;
+}
+#subscribe .row{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+#subscribe input{
+  border: none;
+  background-color: rgba(52, 52, 52, .1);
+  height: 50px;
+  color: white;
+}
+
+#subscribe input::placeholder{
+  color:white;
+}
+
+/* ---------------List -------------- */
+#list{
+  min-height: 200px;
+}
+
+#list .row{
+  width: 90%;
+  margin: auto;
+}
+
+#list .row .col-md-3 .card{
+  margin: auto;
+  width: 90%;
+  padding-left: 60px;
+}
+
+#list .row h5{
+  color: white;
+}
+
+#list .row p{
+  color: rgba(255, 255, 255, .5);
+}
+
+#list ul li{
+  list-style:none;
+  font-size: 13px;
+}
+
+#list ul li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, .5);
+}
+
+.icons a:nth-child(2){
+  margin: 0 10px;
+}
+
+/* ---------------copyright -------------- */
+#copyright p{
+  color: rgba(255, 255, 255, .5);
+}
+
+/* ---------------Aniamsi dan Mobile screen -------------- */
+@media only screen and (max-width: 768px) {
+  .support{
+    border: none;
+    padding: 0;
+  }
+  #list .row .col-md-3 .card{
+    padding-left: 0;
+  }
+}
